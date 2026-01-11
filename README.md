@@ -5,10 +5,10 @@
 ### 🛠 What’s inside?
 A full-blown web dashboard to manage your dedicated server without touching the terminal:
 * **Remote Control:** Boot or kill the server process via PHP.
-* <img width="1906" height="927" alt="image" src="https://github.com/user-attachments/assets/1fb185ac-33cb-4949-a73b-1485c1b3090e" />
+ <img width="1906" height="927" alt="image" src="https://github.com/user-attachments/assets/1fb185ac-33cb-4949-a73b-1485c1b3090e" />
 * **Config Management:** Real-time editing for `server.cfg` and `dedicated.cfg`.
 * **Logs & Bans:** View chat logs, kick logs, and manage player blacklists.
-* <img width="1919" height="952" alt="image" src="https://github.com/user-attachments/assets/391e8c56-9d27-4c2d-8253-c86688dd574e" />
+ <img width="1919" height="952" alt="image" src="https://github.com/user-attachments/assets/391e8c56-9d27-4c2d-8253-c86688dd574e" />
 * **Resources:** GSC script management and file editing.
 
 ### ⚠️ Important: Read this before installing

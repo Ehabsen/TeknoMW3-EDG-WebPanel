@@ -1,0 +1,305 @@
+<?php include_once "auth.php"; ?> 
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>EDG WebPanel</title>
+<link href="http://fonts.googleapis.com/css?family=Oswald:400,700,300" rel="stylesheet" type="text/css" />
+<!-- Included CSS Files -->
+<link rel="stylesheet" href="../stylesheets/main.css" />
+<link rel="stylesheet" href="../stylesheets/devices.css" />
+<link rel="stylesheet" href="../stylesheets/paralax_slider.css" />
+<link rel="stylesheet" href="../stylesheets/jquery.fancybox.css?v=2.1.2" type="text/css"  media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="stylesheets/ie.css"> 
+<![endif]-->
+
+
+</head>
+
+<body>
+
+<!--********************************************* Main wrapper Start *********************************************-->
+<div id="footer_image">
+  <div id="main_wrapper"> 
+    
+    <!--********************************************* Logo Start *********************************************-->
+    <div id="logo"> <a href="#"><img alt="alt_example" src="../images/logo.png"  /></a>
+      <div id="social_ctn"> 
+      <a href="http://www.youtube.com/channel/UCZHTWYNCUA2mYRIwYENNq1A" target="YouTube" id="you_tube"><img alt="alt_example" src="../images/blank.gif" width="100%" height="37px" /></a> 
+      
+      </div>
+    
+    </div>
+    <!--********************************************* Logo end *********************************************--> 
+    
+    <!--********************************************* Main_in Start *********************************************-->
+    <div id="main_in"> 
+    
+    <!--********************************************* Mainmenu Start *********************************************-->
+    <div id="menu_wrapper">
+      <div id="menu_left"></div>
+      <ul id="menu">
+        <li><a href="http://edg-tkg.de/Home.html">Home</a></li>
+        <li><a href="http://edg-tkg.de/ts3wi/" target="TS3 WebPanel">TS3 WebPanel</a></li>
+        <li><a href="http://edg-tkg.de/" target="EDG Website" >EDG WebSite</a></li>
+        <li><a href="http://edg-tkg.de/wi/SvZ/functions/index2.php">SvZ Server</a></li>
+        <li><a href="./logout.php">logout</a></li>
+        <li></li>
+        <li></li>
+
+            </ul>
+		</li>
+      </ul>
+        <a href="#" id="pull">Menu</a>
+      <div id="menu_right"></div>
+      <div class="clear"></div>
+    </div>
+    
+    <!--********************************************* Mainmenu end *********************************************--> 
+    
+    <!--********************************************* Banner start *********************************************--><!--********************************************* Banner end *********************************************-->
+    
+    <div class="top_shadow"></div>
+    
+    <!--********************************************* Hot news start *********************************************-->
+    <div id="hot_news">
+      <div class="header">
+        <h1><span>Welcome to the webinterface!!!</span></h1>
+      </div>
+      
+      <!-- Previous and next selector --> 
+      <a id="prev" class="prev" href="#"><img alt="alt_example" src="../images/blank.gif" width="21" height="33" border="0" /></a> <a id="next" class="next" href="#"><img alt="alt_example" src="../images/blank.gif" width="21" height="33" border="0" /></a>
+      <ul id="hot_news_box">
+        <li>
+		<h1>Config Editor<br>
+        <h2><a href="./Configs/SinScript.php" target="SinScript Editor">SinScript Editor</a>
+		<br>
+        <h2><a href="./Configs/SinConfig.php" target="SinConfig Editor">SinConfig Editor</a>
+		<br>
+		<h2><a href="./Configs/AdminScript.php" target="AdminScript Editor">AdminScript Editor</a>
+		<br>
+		<h2><a href="./Configs/ServerCFG.php" target="Server CFG">Server CFG</a>
+		</li>
+			<li>
+		<h1>Banlists<br>
+          <h2><a href="./BanLists/PermBanList.php" target="PermBanList">PermBanList</a>
+		  <br>
+		  <h2><a href="./BanLists/IPBanList.php" target="IPBanList">IPBanList</a>
+			</li>
+        <li>
+		<h1>Logs<br>
+          <h2><a href="./Logs/chatlog.php" target="ChatLog">ChatLog</a>
+		  <br>
+		  <h2><a href="./Logs/playerlog.php" target="PlayerLog">PlayerLog</a>
+		  <br>
+		  <h2><a href="./Logs/alllog.php" target="ALl Log">All Log</a>
+		  <br>
+		  <h2><a href="./Logs/cmdslog.php" target="CMDs Log">CMDs Log</a>
+		  <br>
+          <h2><a href="./Logs/cleanup.php" target="Backup Log">Backup Logs</a>
+		</li>
+	<li>
+			<h1>Script Files<br>
+			<h2><a href="./Scriptfiles/blocked.php" target="Blocked">Blocked Users</a>
+			<br>
+			<h2><a href="./Scriptfiles/errorlog.php" target="Error Log">Error Log</a>
+			<br>
+			<h2><a href="./Scriptfiles/rules.php" target="Rules">Rules</a>
+			<br>
+			<h2><a href="./Scriptfiles/timedmessages.php" target="Timed Messages">Timed Messages</a>
+			</li>
+      </ul>
+    </div>
+	
+	
+
+    <!--********************************************* Hot news end *********************************************--> 
+    
+    <!--********************************************* Main start *********************************************--><!--********************************************* Main end *********************************************--> 
+    
+    <!--********************************************* Main advert start *********************************************--><!--********************************************* Main advert end *********************************************--> 
+    
+    <!--********************************************* Footer start *********************************************--><!--********************************************* Footer end *********************************************--> 
+    <div class="clear"></div>
+    <!--********************************************* Twitter feed start *********************************************-->
+    <!--********************************************* Twitter feed end *********************************************--> 
+		<form action="./Mains/server restarter.php"> 
+        <input type="button"  onClick="ServerRestarter()" value="Start Server!">
+		</form>
+		<form action="./Mains/serverkiller.php"> 
+        <input type="button" onClick="ServerStop()" value="Stop Server!">
+		</form>
+
+<form action="./Mains/ipbans.php" method="post">
+<input type="textbox" name="ipaddress">
+<input type="submit" value="BAN IP" id="start-button">
+</forms>
+
+
+  </div>
+</div>
+<!--********************************************* Main wrapper end *********************************************--> 
+
+<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script> 
+
+<script src="../javascript/jquery.carouFredSel-6.1.0.js" type="text/javascript"></script> 
+<script src="../javascript/jquery.cslider.js" type="text/javascript" ></script> 
+<script src="../javascript/modernizr.custom.28468.js" type="text/javascript"></script> 
+<script src="../javascript/getTweet.js" type="text/javascript" ></script> 
+<script src="../javascript/jquery.fancybox.js?v=2.1.3" type="text/javascript" ></script> 
+
+
+
+
+<!--******* Server Starter*******--> 
+<script type="text/javascript">
+<!--
+function ServerStart() {
+window.open( "./Mains/Server Starter.php", "Server Start", 
+"status = 1, height = 300, width = 300, resizable = 0" )
+//-->
+</script>
+
+
+<!--******* Server Killer*******--> 
+<script type="text/javascript">
+<!--
+function ServerStop() {
+window.open( "./Mains/ServerKiller.php", "Server Killer", 
+"status = 1, height = 300, width = 300, resizable = 0" )
+}
+//-->
+</script>
+
+<!--******* Server Restarter*******--> 
+<script type="text/javascript">
+<!--
+function ServerRestarter() {
+window.open( "./Mains/ServerRestarter.php", "Server Restarter", 
+"status = 1, height = 300, width = 300, resizable = 0" )
+}
+//-->
+</script>
+
+<!--******* Javascript Code for the Hot news carousel *******--> 
+<script type="text/javascript">
+	$(document).ready(function() {
+	
+		// Using default configuration
+		$("#sd").carouFredSel();
+		
+		// Using custom configuration
+		$("#hot_news_box").carouFredSel({
+			items				: 1,
+			direction			: "left",
+			prev: '#prev',
+			next: '#next',
+			scroll : {
+				items			: 1,
+				height			: 250,
+				easing			: "quadratic",
+				duration		: 500,							
+				pauseOnHover	: true
+			}	
+		});	
+	})
+</script> 
+
+<!--******* Javascript Code for the Hot news carousel *******--> 
+<script type="text/javascript">
+	$(document).ready(function() {
+	
+		// Using default configuration
+		$("#sd").carouFredSel();
+		
+		// Using custom configuration
+		$("#hot_news_box2").carouFredSel({
+			items				: 4,
+			direction			: "right",
+			prev: '#prev',
+			next: '#next',
+			scroll : {
+				items			: 1,
+				height			: 250,
+				easing			: "quadratic",
+				duration		: 2000,							
+				pauseOnHover	: true
+			}	
+		});	
+	})
+</script> 
+
+
+<!--******* Javascript Code for the Main banner *******--> 
+<script type="text/javascript">
+	$(function() {
+	
+		$('#da-slider').cslider({
+			autoplay	: true,
+			bgincrement	: 450
+		});
+	
+	});
+</script> 
+
+<!--******* Javascript Code for the image shadowbox *******--> 
+<script type="text/javascript">
+$(document).ready(function() {
+	/*
+	*  Simple image gallery. Uses default settings
+	*/
+	
+	$('.shadowbox').fancybox();
+});
+</script>
+
+<!--******* Javascript Code for the menu *******-->
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#menu li').bind('mouseover', openSubMenu);
+        $('#menu > li').bind('mouseout', closeSubMenu);
+
+        function openSubMenu() {
+            $(this).find('ul').css('visibility', 'visible');
+        };
+
+        function closeSubMenu() {
+            $(this).find('ul').css('visibility', 'hidden');
+        };
+    });
+</script>
+
+<script type="text/javascript">
+    $(function() {
+        var pull    = $('#pull');
+        menu 		= $('ul#menu');
+
+        $(pull).on('click', function(e) {
+            e.preventDefault();
+            menu.slideToggle();
+        });
+
+        $(window).resize(function(){
+            var w = $(window).width();
+            if(w > 767 && $('ul#menu').css('visibility', 'hidden')) {
+                $('ul#menu').removeAttr('style');
+            };
+            var menu = $('#menu_wrapper').width();
+            $('#pull').width(menu - 20);
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(function() {
+        var menu = $('#menu_wrapper').width();
+        $('#pull').width(menu - 20);
+    });
+</script>
+</body>
+</html>
